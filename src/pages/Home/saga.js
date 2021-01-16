@@ -14,7 +14,9 @@ function* getDefinition({payload: {word, language}}) {
   const requestURL = `${baseUrl}/${language}/${word}`;
   try {
     const {data} = yield call(request, requestURL, options);
-    if(!data.length) throw new Error('No results');
+    if (!data.length) {
+      throw new Error('No results');
+    }
     yield put(actions.getDefinitionSuccess(data[0]));
   } catch (error) {
     yield put(actions.getDefinitionFailed(error.response.status || error));

@@ -5,14 +5,14 @@
  */
 
 import React from 'react';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
 import configureStore from './redux';
 import App from './pages';
 
 // Create redux store
 const initialState = {};
-const { store, persistor } = configureStore(initialState);
+const {store, persistor} = configureStore(initialState);
 
 const HOC = () => {
   return (

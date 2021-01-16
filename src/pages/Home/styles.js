@@ -38,6 +38,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
   },
+  h1: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
   desc: {
     color: 'white',
     fontSize: 14,

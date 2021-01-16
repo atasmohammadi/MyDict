@@ -1,8 +1,8 @@
 import invariant from 'invariant';
-import { isEmpty, isFunction, isString, conformsTo } from 'lodash';
+import {isEmpty, isFunction, isString, conformsTo} from 'lodash';
 
 import checkStore from './checkStore';
-import { DAEMON, ONCE_TILL_UNMOUNT, RESTART_ON_REMOUNT } from './constants';
+import {DAEMON, ONCE_TILL_UNMOUNT, RESTART_ON_REMOUNT} from './constants';
 
 const allowedModes = [RESTART_ON_REMOUNT, DAEMON, ONCE_TILL_UNMOUNT];
 
@@ -25,13 +25,15 @@ const checkDescriptor = (descriptor) => {
 
 export function injectSagaFactory(store, isValid) {
   return function injectSaga(key, descriptor = {}, args) {
-    if (!isValid) checkStore(store);
+    if (!isValid) {
+      checkStore(store);
+    }
 
     const newDescriptor = {
       ...descriptor,
       mode: descriptor.mode || DAEMON,
     };
-    const { saga, mode } = newDescriptor;
+    const {saga, mode} = newDescriptor;
 
     checkKey(key);
     checkDescriptor(newDescriptor);
@@ -63,7 +65,9 @@ export function injectSagaFactory(store, isValid) {
 
 export function ejectSagaFactory(store, isValid) {
   return function ejectSaga(key) {
-    if (!isValid) checkStore(store);
+    if (!isValid) {
+      checkStore(store);
+    }
 
     checkKey(key);
 

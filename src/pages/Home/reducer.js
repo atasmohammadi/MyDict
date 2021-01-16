@@ -8,7 +8,7 @@ import produce from 'immer';
 import * as constants from './constants';
 
 export const initialState = {
-  definitions: {},
+  definitions: constants.initialState,
   error: false,
   success: false,
   loading: false,
@@ -25,8 +25,8 @@ const homeReducer = (state = initialState, action) =>
         // to cache the results and also have the offline capability, instead
         // of replacing the results with results from API, we would append new
         // data into existing one.
-        const { word, phonetics, meanings } = action.payload.definitions;
-        draft.definitions[word] = { word, phonetics, meanings };
+        const {word, phonetics, meanings} = action.payload.definitions;
+        draft.definitions[word] = {word, phonetics, meanings};
         draft.success = true;
         draft.loading = false;
         draft.error = false;
