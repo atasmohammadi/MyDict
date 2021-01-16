@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StatusBar, SafeAreaView, FlatList, View, Text} from 'react-native';
+import {StatusBar, SafeAreaView, FlatList, View, Text, Keyboard} from 'react-native';
 import {Input, Button} from 'react-native-elements';
 import RNPickerSelect from 'react-native-picker-select';
 import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
@@ -9,7 +9,7 @@ import {compose} from 'redux';
 import {useInjectSaga} from '../../utils/injectSaga';
 import * as actions from './actions';
 import styles from './styles';
-import {languages, initialPhrases} from '../../constants';
+import {languages} from '../../constants';
 
 import * as selectors from './selectors';
 import saga from './saga';
@@ -20,13 +20,13 @@ function Home(props) {
   useInjectSaga({key: 'Home', saga});
   const [searchQuery, updateSearchQuery] = useState('');
   const [language, setLanguage] = useState(languages.en.code);
-
   const definitionsArray = Object.values(definitions);
 
   function search() {
     if (!searchQuery) {
       return;
     }
+    Keyboard.dismiss()
     getDefinition(searchQuery, language);
   }
 

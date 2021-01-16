@@ -25,8 +25,9 @@ const homeReducer = (state = initialState, action) =>
         // to cache the results and also have the offline capability, instead
         // of replacing the results with results from API, we would append new
         // data into existing one.
-        const {word, phonetics, meanings} = action.payload.definitions;
-        draft.definitions[word] = {word, phonetics, meanings};
+        const {word} = action.payload.definitions;
+        // draft.definitions[word] = {word, phonetics, meanings};
+        draft.definitions = Object.assign({}, { [word]: action.payload.definitions }, draft.definitions)
         draft.success = true;
         draft.loading = false;
         draft.error = false;
