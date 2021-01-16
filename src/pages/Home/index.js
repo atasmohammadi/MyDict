@@ -9,7 +9,7 @@ import {compose} from 'redux';
 import {useInjectSaga} from '../../utils/injectSaga';
 import * as actions from './actions';
 import styles from './styles';
-import {languages} from '../../constants';
+import {languages, initialPhrases} from '../../constants';
 
 import * as selectors from './selectors';
 import saga from './saga';
@@ -22,10 +22,6 @@ function Home(props) {
   const [language, setLanguage] = React.useState(languages.en.code);
 
   const definitionsArray = Object.values(definitions);
-
-  // componentDidMount
-  React.useEffect(() => {
-  }, []);
 
   function search() {
     if(!searchQuery) return

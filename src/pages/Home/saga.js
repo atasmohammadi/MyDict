@@ -1,4 +1,4 @@
-import {call, put, takeLatest} from 'redux-saga/effects';
+import {call, put, takeEvery} from 'redux-saga/effects';
 import request from '../../utils/request';
 import * as constants from './constants';
 import * as actions from './actions';
@@ -22,5 +22,5 @@ function* getDefinition({payload: {word, language}}) {
 }
 
 export default function* HomeSaga() {
-  yield takeLatest(constants.GET_DEFINITION, getDefinition);
+  yield takeEvery(constants.GET_DEFINITION, getDefinition);
 }
