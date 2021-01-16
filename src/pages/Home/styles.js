@@ -1,10 +1,17 @@
 import {StatusBar, StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
+  searchContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 5,
+  },
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
-    backgroundColor: '#222831'
+    backgroundColor: '#222831',
   },
   item: {
     flex: 1,
@@ -20,7 +27,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.22,
     shadowRadius: 2.22,
     elevation: 3,
-    borderRadius: 5
+    borderRadius: 5,
   },
   row: {
     flexDirection: 'column',

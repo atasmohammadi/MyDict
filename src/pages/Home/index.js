@@ -83,7 +83,7 @@ function Home(props) {
 
   function searchBar() {
     return (
-      <View styles={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems:'center'}}>
+      <View styles={styles.searchContainer}>
         <Input
           containerStyle={{}}
           rightIcon={<Icon name="close" size={20} color="#fff" />}
@@ -95,6 +95,37 @@ function Home(props) {
             onValueChange={setLanguage}
             value={language}
             items={Object.values(languages).map(i => ({value: i.code, label: i.language}))}
+            style={{
+              iconContainer: {
+                top: 20,
+                right: 10,
+              },
+              placeholder: {
+                color: 'white',
+                fontSize: 12,
+                fontWeight: 'bold',
+              },
+              inputIOS: {
+                fontSize: 16,
+                paddingVertical: 12,
+                paddingHorizontal: 10,
+                borderWidth: 1,
+                borderColor: 'gray',
+                borderRadius: 4,
+                color: 'white',
+                paddingRight: 30, // to ensure the text is never behind the icon
+              },
+              inputAndroid: {
+                fontSize: 16,
+                paddingHorizontal: 10,
+                paddingVertical: 8,
+                borderWidth: 0.5,
+                borderColor: 'purple',
+                borderRadius: 8,
+                color: 'white',
+                paddingRight: 30, // to ensure the text is never behind the icon
+              },
+            }}
         />
         <Button
           onPress={search}
