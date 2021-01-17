@@ -7,10 +7,12 @@
 export const GET_DEFINITION = 'app/Home/GET_DEFINITION';
 export const GET_DEFINITION_SUCCESS = 'app/Home/GET_DEFINITION_SUCCESS';
 export const GET_DEFINITION_FAILED = 'app/Home/GET_DEFINITION_FAILED';
+export const TOGGLE_SAVED = 'app/Home/TOGGLE_SAVED';
 
 export const initialState = {
   intersperse: {
-    word: 'intersperse',
+    saved: false,
+word: 'intersperse',
     phonetics: [
       {
         text: '/ˌɪn(t)ərˈspərs/',
@@ -46,7 +48,8 @@ export const initialState = {
     ],
   },
   dread: {
-    word: 'dread',
+    saved: false,
+word: 'dread',
     phonetics: [
       {
         text: '/drɛd/',
@@ -127,7 +130,8 @@ export const initialState = {
     ],
   },
   vague: {
-    word: 'vague',
+    saved: false,
+word: 'vague',
     phonetics: [
       {
         text: '/veɪɡ/',
@@ -155,7 +159,8 @@ export const initialState = {
     ],
   },
   sacred: {
-    word: 'sacred',
+    saved: false,
+word: 'sacred',
     phonetics: [
       {
         text: '/ˈseɪkrəd/',
@@ -193,7 +198,8 @@ export const initialState = {
     ],
   },
   whirlpool: {
-    word: 'whirlpool',
+    saved: false,
+word: 'whirlpool',
     phonetics: [
       {
         text: '/ˈ(h)wərlˌpul/',
@@ -236,7 +242,8 @@ export const initialState = {
     ],
   },
   flotsam: {
-    word: 'flotsam',
+    saved: false,
+word: 'flotsam',
     phonetics: [
       {
         text: '/ˈflɑtsəm/',
@@ -272,7 +279,8 @@ export const initialState = {
     ],
   },
   crowning: {
-    word: 'crowning',
+    saved: false,
+word: 'crowning',
     phonetics: [
       {
         text: '/ˈkraʊnɪŋ/',
@@ -298,7 +306,8 @@ export const initialState = {
     ],
   },
   seldom: {
-    word: 'seldom',
+    saved: false,
+word: 'seldom',
     phonetics: [
       {
         text: '/ˈsɛldəm/',
@@ -351,7 +360,8 @@ export const initialState = {
     ],
   },
   proclamation: {
-    word: 'proclamation',
+    saved: false,
+word: 'proclamation',
     phonetics: [
       {
         text: '/ˌprɑkləˈmeɪʃ(ə)n/',
@@ -398,7 +408,8 @@ export const initialState = {
     ],
   },
   encompass: {
-    word: 'encompass',
+    saved: false,
+word: 'encompass',
     phonetics: [
       {
         text: '/ɪnˈkəmpəs/',
@@ -450,7 +461,8 @@ export const initialState = {
     ],
   },
   superluminal: {
-    word: 'superluminal',
+    saved: false,
+word: 'superluminal',
     phonetics: [
       {
         text: '/ˌsupərˈlumənl/',
@@ -475,7 +487,8 @@ export const initialState = {
     ],
   },
   consensus: {
-    word: 'consensus',
+    saved: false,
+word: 'consensus',
     phonetics: [
       {
         text: '/kənˈsɛnsəs/',
@@ -524,7 +537,8 @@ export const initialState = {
     ],
   },
   perennial: {
-    word: 'perennial',
+    saved: false,
+word: 'perennial',
     phonetics: [
       {
         text: '/pəˈrɛniəl/',
@@ -588,7 +602,8 @@ export const initialState = {
     ],
   },
   preponderance: {
-    word: 'preponderance',
+    saved: false,
+word: 'preponderance',
     phonetics: [
       {
         text: '/prəˈpɑnd(ə)rəns/',
@@ -616,7 +631,8 @@ export const initialState = {
     ],
   },
   commensurate: {
-    word: 'commensurate',
+    saved: false,
+word: 'commensurate',
     phonetics: [
       {
         text: '/kəˈmɛnsərət/',
@@ -669,7 +685,8 @@ export const initialState = {
     ],
   },
   myth: {
-    word: 'myth',
+    saved: false,
+word: 'myth',
     phonetics: [
       {
         text: '/mɪθ/',
@@ -728,7 +745,8 @@ export const initialState = {
     ],
   },
   intuition: {
-    word: 'intuition',
+    saved: false,
+word: 'intuition',
     phonetics: [
       {
         text: '/ˌɪnt(j)uˈɪʃ(ə)n/',
@@ -768,7 +786,8 @@ export const initialState = {
     ],
   },
   personhood: {
-    word: 'personhood',
+    saved: false,
+word: 'personhood',
     phonetics: [
       {
         text: '/ˈpərs(ə)nˌhʊd/',
@@ -803,7 +822,8 @@ export const initialState = {
     ],
   },
   volition: {
-    word: 'volition',
+    saved: false,
+word: 'volition',
     phonetics: [
       {
         text: '/voʊˈlɪʃ(ə)n/',
@@ -863,7 +883,8 @@ export const initialState = {
     ],
   },
   vitality: {
-    word: 'vitality',
+    saved: false,
+word: 'vitality',
     phonetics: [
       {
         text: '/vaɪˈtælədi/',
@@ -932,7 +953,8 @@ export const initialState = {
     ],
   },
   provocative: {
-    word: 'provocative',
+    saved: false,
+word: 'provocative',
     phonetics: [
       {
         text: '/prəˈvɑkədɪv/',
@@ -977,7 +999,8 @@ export const initialState = {
     ],
   },
   pinnacle: {
-    word: 'pinnacle',
+    saved: false,
+word: 'pinnacle',
     phonetics: [
       {
         text: '/ˈpɪnək(ə)l/',
@@ -1060,7 +1083,8 @@ export const initialState = {
     ],
   },
   daring: {
-    word: 'daring',
+    saved: false,
+word: 'daring',
     phonetics: [
       {
         text: '/ˈdɛrɪŋ/',
@@ -1128,7 +1152,8 @@ export const initialState = {
     ],
   },
   realm: {
-    word: 'realm',
+    saved: false,
+word: 'realm',
     phonetics: [
       {
         text: '/rɛlm/',
@@ -1167,7 +1192,8 @@ export const initialState = {
     ],
   },
   dazzling: {
-    word: 'dazzling',
+    saved: false,
+word: 'dazzling',
     phonetics: [
       {
         text: '/ˈdæz(ə)lɪŋ/',
@@ -1209,7 +1235,8 @@ export const initialState = {
     ],
   },
   divine: {
-    word: 'divine',
+    saved: false,
+word: 'divine',
     phonetics: [
       {
         text: '/dəˈvaɪn/',
@@ -1291,7 +1318,8 @@ export const initialState = {
     ],
   },
   inhibition: {
-    word: 'inhibition',
+    saved: false,
+word: 'inhibition',
     phonetics: [
       {
         text: '/ˌɪn(h)ɪˈbɪʃ(ə)n/',
@@ -1345,7 +1373,8 @@ export const initialState = {
     ],
   },
   catapult: {
-    word: 'catapult',
+    saved: false,
+word: 'catapult',
     phonetics: [
       {
         text: '/ˈkædəˌpəlt/',
@@ -1398,7 +1427,8 @@ export const initialState = {
     ],
   },
   azure: {
-    word: 'azure',
+    saved: false,
+word: 'azure',
     phonetics: [
       {
         text: '/ˈæʒər/',
@@ -1459,7 +1489,8 @@ export const initialState = {
     ],
   },
   seizing: {
-    word: 'seizing',
+    saved: false,
+word: 'seizing',
     phonetics: [
       {
         text: '/ˈsizɪŋ/',
@@ -1485,7 +1516,8 @@ export const initialState = {
     ],
   },
   peering: {
-    word: 'peering',
+    saved: false,
+word: 'peering',
     phonetics: [
       {
         text: '/pɪərɪŋ/',
@@ -1520,7 +1552,8 @@ export const initialState = {
     ],
   },
   mere: {
-    word: 'mere',
+    saved: false,
+word: 'mere',
     phonetics: [
       {
         text: '/mɪr/',
@@ -1574,7 +1607,8 @@ export const initialState = {
     ],
   },
   inaction: {
-    word: 'inaction',
+    saved: false,
+word: 'inaction',
     phonetics: [
       {
         text: '/ɪnˈækʃ(ə)n/',
@@ -1608,7 +1642,8 @@ export const initialState = {
     ],
   },
   pamper: {
-    word: 'pamper',
+    saved: false,
+word: 'pamper',
     phonetics: [
       {
         text: '/ˈpæmpər/',
@@ -1645,7 +1680,8 @@ export const initialState = {
     ],
   },
   merely: {
-    word: 'merely',
+    saved: false,
+word: 'merely',
     phonetics: [
       {
         text: '/ˈmɪrli/',
@@ -1681,7 +1717,8 @@ export const initialState = {
     ],
   },
   lethargy: {
-    word: 'lethargy',
+    saved: false,
+word: 'lethargy',
     phonetics: [
       {
         text: '/ˈlɛθərdʒi/',
@@ -1741,7 +1778,8 @@ export const initialState = {
     ],
   },
   plague: {
-    word: 'plague',
+    saved: false,
+word: 'plague',
     phonetics: [
       {
         text: '/pleɪɡ/',
@@ -1796,7 +1834,8 @@ export const initialState = {
     ],
   },
   seize: {
-    word: 'seize',
+    saved: false,
+word: 'seize',
     phonetics: [
       {
         text: '/siz/',
@@ -1890,7 +1929,8 @@ export const initialState = {
     ],
   },
   incessant: {
-    word: 'incessant',
+    saved: false,
+word: 'incessant',
     phonetics: [
       {
         text: '/ɪnˈsɛs(ə)nt/',
@@ -1952,7 +1992,8 @@ export const initialState = {
     ],
   },
   entitlement: {
-    word: 'entitlement',
+    saved: false,
+word: 'entitlement',
     phonetics: [
       {
         text: '/ɪnˈtaɪdlmənt/',
@@ -1991,7 +2032,8 @@ export const initialState = {
     ],
   },
   fleeting: {
-    word: 'fleeting',
+    saved: false,
+word: 'fleeting',
     phonetics: [
       {
         text: '/ˈflidɪŋ/',
@@ -2057,7 +2099,8 @@ export const initialState = {
     ],
   },
   unintelligible: {
-    word: 'unintelligible',
+    saved: false,
+word: 'unintelligible',
     phonetics: [
       {
         text: '/ˌənənˈtɛlədʒəb(ə)l/',
@@ -2113,7 +2156,8 @@ export const initialState = {
     ],
   },
   gaze: {
-    word: 'gaze',
+    saved: false,
+word: 'gaze',
     phonetics: [
       {
         text: '/ɡeɪz/',
@@ -2168,7 +2212,8 @@ export const initialState = {
     ],
   },
   whisk: {
-    word: 'whisk',
+    saved: false,
+word: 'whisk',
     phonetics: [
       {
         text: '/(h)wɪsk/',
@@ -2243,7 +2288,8 @@ export const initialState = {
     ],
   },
   superficial: {
-    word: 'superficial',
+    saved: false,
+word: 'superficial',
     phonetics: [
       {
         text: '/ˌsupərˈfɪʃəl/',
@@ -2279,7 +2325,8 @@ export const initialState = {
     ],
   },
   obliterate: {
-    word: 'obliterate',
+    saved: false,
+word: 'obliterate',
     phonetics: [
       {
         text: '/əˈblɪdəˌreɪt/',
@@ -2328,7 +2375,8 @@ export const initialState = {
     ],
   },
   imploring: {
-    word: 'imploring',
+    saved: false,
+word: 'imploring',
     phonetics: [
       {
         text: '/ɪmˈplɔrɪŋ/',
@@ -2356,7 +2404,8 @@ export const initialState = {
     ],
   },
   exuberant: {
-    word: 'exuberant',
+    saved: false,
+word: 'exuberant',
     phonetics: [
       {
         text: '/ɪɡˈzub(ə)rənt/',
@@ -2421,7 +2470,8 @@ export const initialState = {
     ],
   },
   tumultuous: {
-    word: 'tumultuous',
+    saved: false,
+word: 'tumultuous',
     phonetics: [
       {
         text: '/t(j)uˈməltʃuəs/',
@@ -2473,7 +2523,8 @@ export const initialState = {
     ],
   },
   demise: {
-    word: 'demise',
+    saved: false,
+word: 'demise',
     phonetics: [
       {
         text: '/dəˈmaɪz/',
@@ -2545,7 +2596,8 @@ export const initialState = {
     ],
   },
   reconcile: {
-    word: 'reconcile',
+    saved: false,
+word: 'reconcile',
     phonetics: [
       {
         text: '/ˈrɛkənˌsaɪl/',
@@ -2592,7 +2644,8 @@ export const initialState = {
     ],
   },
   startling: {
-    word: 'startling',
+    saved: false,
+word: 'startling',
     phonetics: [
       {
         text: '/ˈstɑrdlɪŋ/',
@@ -2635,7 +2688,8 @@ export const initialState = {
     ],
   },
   gnawing: {
-    word: 'gnawing',
+    saved: false,
+word: 'gnawing',
     phonetics: [
       {
         text: '/ˈnɔɪŋ/',
@@ -2674,7 +2728,8 @@ export const initialState = {
     ],
   },
   anthropology: {
-    word: 'anthropology',
+    saved: false,
+word: 'anthropology',
     phonetics: [
       {
         text: '/ˌænθrəˈpɑlədʒi/',
@@ -2709,7 +2764,8 @@ export const initialState = {
     ],
   },
   loathing: {
-    word: 'loathing',
+    saved: false,
+word: 'loathing',
     phonetics: [
       {
         text: '/ˈloʊðɪŋ/',
@@ -2735,7 +2791,8 @@ export const initialState = {
     ],
   },
   murky: {
-    word: 'murky',
+    saved: false,
+word: 'murky',
     phonetics: [
       {
         text: '/ˈmərki/',
@@ -2784,7 +2841,8 @@ export const initialState = {
     ],
   },
   fiasco: {
-    word: 'fiasco',
+    saved: false,
+word: 'fiasco',
     phonetics: [
       {
         text: '/fiˈæskoʊ/',
@@ -2840,7 +2898,8 @@ export const initialState = {
     ],
   },
   frivolous: {
-    word: 'frivolous',
+    saved: false,
+word: 'frivolous',
     phonetics: [
       {
         text: '/ˈfrɪvələs/',
@@ -2883,7 +2942,8 @@ export const initialState = {
     ],
   },
   impermanence: {
-    word: 'impermanence',
+    saved: false,
+word: 'impermanence',
     phonetics: [
       {
         text: '/ɪmˈpərmənəns/',
@@ -2906,7 +2966,8 @@ export const initialState = {
     ],
   },
   forfeit: {
-    word: 'forfeit',
+    saved: false,
+word: 'forfeit',
     phonetics: [
       {
         text: '/ˈfɔrfət/',
@@ -2965,7 +3026,8 @@ export const initialState = {
     ],
   },
   sulk: {
-    word: 'sulk',
+    saved: false,
+word: 'sulk',
     phonetics: [
       {
         text: '/səlk/',
@@ -3036,7 +3098,8 @@ export const initialState = {
     ],
   },
   meticulously: {
-    word: 'meticulously',
+    saved: false,
+word: 'meticulously',
     phonetics: [
       {
         text: '/məˈtɪkjələsli/',
@@ -3070,7 +3133,8 @@ export const initialState = {
     ],
   },
   adoration: {
-    word: 'adoration',
+    saved: false,
+word: 'adoration',
     phonetics: [
       {
         text: '/ˌædəˈreɪʃ(ə)n/',
@@ -3129,7 +3193,8 @@ export const initialState = {
     ],
   },
   breadth: {
-    word: 'breadth',
+    saved: false,
+word: 'breadth',
     phonetics: [
       {
         text: '/brɛdθ/',
@@ -3170,7 +3235,8 @@ export const initialState = {
     ],
   },
   indoctrination: {
-    word: 'indoctrination',
+    saved: false,
+word: 'indoctrination',
     phonetics: [],
     meanings: [
       {
@@ -3205,7 +3271,8 @@ export const initialState = {
     ],
   },
   satirize: {
-    word: 'satirize',
+    saved: false,
+word: 'satirize',
     phonetics: [
       {
         text: '/ˈsædəˌraɪz/',
@@ -3242,7 +3309,8 @@ export const initialState = {
     ],
   },
   affection: {
-    word: 'affection',
+    saved: false,
+word: 'affection',
     phonetics: [
       {
         text: '/əˈfɛkʃ(ə)n/',
@@ -3282,7 +3350,8 @@ export const initialState = {
     ],
   },
   delineation: {
-    word: 'delineation',
+    saved: false,
+word: 'delineation',
     phonetics: [
       {
         text: '/dɪˌlɪniˈeɪʃ(ə)n/',
@@ -3326,7 +3395,8 @@ export const initialState = {
     ],
   },
   tantrum: {
-    word: 'tantrum',
+    saved: false,
+word: 'tantrum',
     phonetics: [
       {
         text: '/ˈtæntrəm/',
@@ -3381,7 +3451,8 @@ export const initialState = {
     ],
   },
   porous: {
-    word: 'porous',
+    saved: false,
+word: 'porous',
     phonetics: [
       {
         text: '/ˈpɔrəs/',
@@ -3416,7 +3487,8 @@ export const initialState = {
     ],
   },
   deception: {
-    word: 'deception',
+    saved: false,
+word: 'deception',
     phonetics: [
       {
         text: '/dəˈsɛpʃ(ə)n/',
@@ -3455,7 +3527,8 @@ export const initialState = {
     ],
   },
   coddle: {
-    word: 'coddle',
+    saved: false,
+word: 'coddle',
     phonetics: [
       {
         text: '/ˈkɑdl/',
@@ -3493,7 +3566,8 @@ export const initialState = {
     ],
   },
   bluntness: {
-    word: 'bluntness',
+    saved: false,
+word: 'bluntness',
     phonetics: [],
     meanings: [],
     translation: [
@@ -3517,7 +3591,8 @@ export const initialState = {
     ],
   },
   stimulating: {
-    word: 'stimulating',
+    saved: false,
+word: 'stimulating',
     phonetics: [
       {
         text: '/ˈstɪmjəˌleɪdɪŋ/',
@@ -3574,7 +3649,8 @@ export const initialState = {
     ],
   },
   impediment: {
-    word: 'impediment',
+    saved: false,
+word: 'impediment',
     phonetics: [
       {
         text: '/ɪmˈpɛdəmənt/',
@@ -3617,7 +3693,8 @@ export const initialState = {
     ],
   },
   rudder: {
-    word: 'rudder',
+    saved: false,
+word: 'rudder',
     phonetics: [
       {
         text: '/ˈrədər/',
@@ -3646,7 +3723,8 @@ export const initialState = {
     ],
   },
   frightening: {
-    word: 'frightening',
+    saved: false,
+word: 'frightening',
     phonetics: [
       {
         text: '/ˈfraɪt(ə)nɪŋ/',
@@ -3679,7 +3757,8 @@ export const initialState = {
     ],
   },
   ulterior: {
-    word: 'ulterior',
+    saved: false,
+word: 'ulterior',
     phonetics: [
       {
         text: '/əlˈtɪriər/',
@@ -3735,7 +3814,8 @@ export const initialState = {
     ],
   },
   flounder: {
-    word: 'flounder',
+    saved: false,
+word: 'flounder',
     phonetics: [
       {
         text: '/ˈflaʊndər/',
@@ -3781,7 +3861,8 @@ export const initialState = {
     ],
   },
   replete: {
-    word: 'replete',
+    saved: false,
+word: 'replete',
     phonetics: [
       {
         text: '/rəˈplit/',
@@ -3831,7 +3912,8 @@ export const initialState = {
     ],
   },
   hopscotch: {
-    word: 'hopscotch',
+    saved: false,
+word: 'hopscotch',
     phonetics: [
       {
         text: '/ˈhɑpˌskɑtʃ/',
@@ -3881,7 +3963,8 @@ export const initialState = {
     ],
   },
   grandiose: {
-    word: 'grandiose',
+    saved: false,
+word: 'grandiose',
     phonetics: [
       {
         text: '/ˈɡrændiˌoʊs/',
@@ -3934,7 +4017,8 @@ export const initialState = {
     ],
   },
   lurking: {
-    word: 'lurking',
+    saved: false,
+word: 'lurking',
     phonetics: [
       {
         text: '/ˈlərkɪŋ/',
@@ -3971,7 +4055,8 @@ export const initialState = {
     ],
   },
   viable: {
-    word: 'viable',
+    saved: false,
+word: 'viable',
     phonetics: [
       {
         text: '/ˈvaɪəb(ə)l/',
@@ -4037,7 +4122,8 @@ export const initialState = {
     ],
   },
   procrastinate: {
-    word: 'procrastinate',
+    saved: false,
+word: 'procrastinate',
     phonetics: [
       {
         text: '/prəˈkræstəˌneɪt/',
@@ -4086,7 +4172,8 @@ export const initialState = {
     ],
   },
   propel: {
-    word: 'propel',
+    saved: false,
+word: 'propel',
     phonetics: [
       {
         text: '/prəˈpɛl/',
@@ -4121,7 +4208,8 @@ export const initialState = {
     ],
   },
   perplexed: {
-    word: 'perplexed',
+    saved: false,
+word: 'perplexed',
     phonetics: [
       {
         text: '/pərˈplɛkst/',
@@ -4154,7 +4242,8 @@ export const initialState = {
     ],
   },
   harness: {
-    word: 'harness',
+    saved: false,
+word: 'harness',
     phonetics: [
       {
         text: '/ˈhɑrnəs/',
@@ -4229,7 +4318,8 @@ export const initialState = {
     ],
   },
   recess: {
-    word: 'recess',
+    saved: false,
+word: 'recess',
     phonetics: [
       {
         text: '/ˈriˌsɛs/',
@@ -4295,7 +4385,8 @@ export const initialState = {
     ],
   },
   beckon: {
-    word: 'beckon',
+    saved: false,
+word: 'beckon',
     phonetics: [
       {
         text: '/ˈbɛkən/',
@@ -4346,7 +4437,8 @@ export const initialState = {
     ],
   },
   esoteric: {
-    word: 'esoteric',
+    saved: false,
+word: 'esoteric',
     phonetics: [
       {
         text: '/ˌɛsəˈtɛrɪk/',
@@ -4390,7 +4482,8 @@ export const initialState = {
     ],
   },
   despite: {
-    word: 'despite',
+    saved: false,
+word: 'despite',
     phonetics: [
       {
         text: '/dəˈspaɪt/',
@@ -4455,7 +4548,8 @@ export const initialState = {
     ],
   },
   relish: {
-    word: 'relish',
+    saved: false,
+word: 'relish',
     phonetics: [
       {
         text: '/ˈrɛlɪʃ/',
@@ -4520,7 +4614,8 @@ export const initialState = {
     ],
   },
   daze: {
-    word: 'daze',
+    saved: false,
+word: 'daze',
     phonetics: [
       {
         text: '/deɪz/',
@@ -4576,7 +4671,8 @@ export const initialState = {
     ],
   },
   prodigy: {
-    word: 'prodigy',
+    saved: false,
+word: 'prodigy',
     phonetics: [
       {
         text: '/ˈprɑdədʒi/',
@@ -4623,7 +4719,8 @@ export const initialState = {
     ],
   },
   chuckle: {
-    word: 'chuckle',
+    saved: false,
+word: 'chuckle',
     phonetics: [
       {
         text: '/ˈtʃək(ə)l/',
@@ -4695,7 +4792,8 @@ export const initialState = {
     ],
   },
   opaque: {
-    word: 'opaque',
+    saved: false,
+word: 'opaque',
     phonetics: [
       {
         text: '/oʊˈpeɪk/',
@@ -4746,7 +4844,8 @@ export const initialState = {
     ],
   },
   requisite: {
-    word: 'requisite',
+    saved: false,
+word: 'requisite',
     phonetics: [
       {
         text: '/ˈrɛkwəzət/',
@@ -4804,7 +4903,8 @@ export const initialState = {
     ],
   },
   petty: {
-    word: 'petty',
+    saved: false,
+word: 'petty',
     phonetics: [
       {
         text: '/ˈpɛdi/',
@@ -4864,7 +4964,8 @@ export const initialState = {
     ],
   },
   trivial: {
-    word: 'trivial',
+    saved: false,
+word: 'trivial',
     phonetics: [
       {
         text: '/ˈtrɪviəl/',
@@ -4917,7 +5018,8 @@ export const initialState = {
     ],
   },
   stagnation: {
-    word: 'stagnation',
+    saved: false,
+word: 'stagnation',
     phonetics: [
       {
         text: '/stæɡˈneɪʃ(ə)n/',
@@ -4950,7 +5052,8 @@ export const initialState = {
     ],
   },
   prolific: {
-    word: 'prolific',
+    saved: false,
+word: 'prolific',
     phonetics: [
       {
         text: '/prəˈlɪfɪk/',
@@ -4993,7 +5096,8 @@ export const initialState = {
     ],
   },
   stifle: {
-    word: 'stifle',
+    saved: false,
+word: 'stifle',
     phonetics: [
       {
         text: '/ˈstaɪfəl/',
@@ -5058,7 +5162,8 @@ export const initialState = {
     ],
   },
   confine: {
-    word: 'confine',
+    saved: false,
+word: 'confine',
     phonetics: [
       {
         text: '/kənˈfaɪn/',
@@ -5115,7 +5220,8 @@ export const initialState = {
     ],
   },
   gruesome: {
-    word: 'gruesome',
+    saved: false,
+word: 'gruesome',
     phonetics: [
       {
         text: '/ˈɡrusəm/',
@@ -5167,7 +5273,8 @@ export const initialState = {
     ],
   },
   instinctive: {
-    word: 'instinctive',
+    saved: false,
+word: 'instinctive',
     phonetics: [
       {
         text: '/ɪnˈstɪŋ(k)tɪv/',
@@ -5194,7 +5301,8 @@ export const initialState = {
     ],
   },
   stellar: {
-    word: 'stellar',
+    saved: false,
+word: 'stellar',
     phonetics: [
       {
         text: '/ˈstɛlər/',
@@ -5228,7 +5336,8 @@ export const initialState = {
     ],
   },
   preordained: {
-    word: 'preordained',
+    saved: false,
+word: 'preordained',
     phonetics: [
       {
         text: '/ˌpriɔrˈdeɪnd/',
@@ -5251,7 +5360,8 @@ export const initialState = {
     ],
   },
   fling: {
-    word: 'fling',
+    saved: false,
+word: 'fling',
     phonetics: [
       {
         text: '/flɪŋ/',
@@ -5329,7 +5439,8 @@ export const initialState = {
     ],
   },
   jolt: {
-    word: 'jolt',
+    saved: false,
+word: 'jolt',
     phonetics: [
       {
         text: '/dʒoʊlt/',
@@ -5367,7 +5478,8 @@ export const initialState = {
     ],
   },
   overbearing: {
-    word: 'overbearing',
+    saved: false,
+word: 'overbearing',
     phonetics: [
       {
         text: '/ˌoʊvərˈbɛrɪŋ/',
@@ -5430,7 +5542,8 @@ export const initialState = {
     ],
   },
   nonchalant: {
-    word: 'nonchalant',
+    saved: false,
+word: 'nonchalant',
     phonetics: [
       {
         text: '/ˌnɑnʃəˈlɑnt/',
@@ -5494,7 +5607,8 @@ export const initialState = {
     ],
   },
   rigorously: {
-    word: 'rigorously',
+    saved: false,
+word: 'rigorously',
     phonetics: [
       {
         text: '/ˈrɪɡ(ə)rəsli/',
@@ -5520,7 +5634,8 @@ export const initialState = {
     ],
   },
   impulsive: {
-    word: 'impulsive',
+    saved: false,
+word: 'impulsive',
     phonetics: [
       {
         text: '/ɪmˈpəlsɪv/',
@@ -5567,7 +5682,8 @@ export const initialState = {
     ],
   },
   humility: {
-    word: 'humility',
+    saved: false,
+word: 'humility',
     phonetics: [
       {
         text: '/(h)juˈmɪlədi/',
@@ -5612,7 +5728,8 @@ export const initialState = {
     ],
   },
   admonish: {
-    word: 'admonish',
+    saved: false,
+word: 'admonish',
     phonetics: [
       {
         text: '/ədˈmɑnɪʃ/',
@@ -5673,7 +5790,8 @@ export const initialState = {
     ],
   },
   dismal: {
-    word: 'dismal',
+    saved: false,
+word: 'dismal',
     phonetics: [
       {
         text: '/ˈdɪzməl/',
@@ -5733,7 +5851,8 @@ export const initialState = {
     ],
   },
   concede: {
-    word: 'concede',
+    saved: false,
+word: 'concede',
     phonetics: [
       {
         text: '/kənˈsid/',
@@ -5798,7 +5917,8 @@ export const initialState = {
     ],
   },
   adage: {
-    word: 'adage',
+    saved: false,
+word: 'adage',
     phonetics: [
       {
         text: '/ˈædɪdʒ/',
@@ -5854,7 +5974,8 @@ export const initialState = {
     ],
   },
   rebuff: {
-    word: 'rebuff',
+    saved: false,
+word: 'rebuff',
     phonetics: [
       {
         text: '/rəˈbəf/',
@@ -5916,7 +6037,8 @@ export const initialState = {
     ],
   },
   unattainable: {
-    word: 'unattainable',
+    saved: false,
+word: 'unattainable',
     phonetics: [
       {
         text: '/ˌənəˈteɪnəb(ə)l/',
@@ -5956,7 +6078,8 @@ export const initialState = {
     ],
   },
   unwavering: {
-    word: 'unwavering',
+    saved: false,
+word: 'unwavering',
     phonetics: [
       {
         text: '/ˌənˈweɪv(ə)rɪŋ/',
@@ -6022,7 +6145,8 @@ export const initialState = {
     ],
   },
   relinquish: {
-    word: 'relinquish',
+    saved: false,
+word: 'relinquish',
     phonetics: [
       {
         text: '/rəˈlɪŋkwɪʃ/',
@@ -6064,7 +6188,8 @@ export const initialState = {
     ],
   },
   reverberate: {
-    word: 'reverberate',
+    saved: false,
+word: 'reverberate',
     phonetics: [
       {
         text: '/rəˈvərbəˌreɪt/',
@@ -6123,7 +6248,8 @@ export const initialState = {
     ],
   },
   righteousness: {
-    word: 'righteousness',
+    saved: false,
+word: 'righteousness',
     phonetics: [
       {
         text: '/ˈraɪtʃəsnəs/',
@@ -6178,7 +6304,8 @@ export const initialState = {
     ],
   },
   devour: {
-    word: 'devour',
+    saved: false,
+word: 'devour',
     phonetics: [
       {
         text: '/dəˈvaʊ(ə)r/',
@@ -6234,7 +6361,8 @@ export const initialState = {
     ],
   },
   proclaim: {
-    word: 'proclaim',
+    saved: false,
+word: 'proclaim',
     phonetics: [
       {
         text: '/prəˈkleɪm/',
@@ -6288,7 +6416,8 @@ export const initialState = {
     ],
   },
   perpetuate: {
-    word: 'perpetuate',
+    saved: false,
+word: 'perpetuate',
     phonetics: [
       {
         text: '/pərˈpɛtʃəˌweɪt/',
@@ -6330,7 +6459,8 @@ export const initialState = {
     ],
   },
   indignation: {
-    word: 'indignation',
+    saved: false,
+word: 'indignation',
     phonetics: [
       {
         text: '/ˌɪndɪɡˈneɪʃ(ə)n/',
@@ -6388,7 +6518,8 @@ export const initialState = {
     ],
   },
   hindrance: {
-    word: 'hindrance',
+    saved: false,
+word: 'hindrance',
     phonetics: [
       {
         text: '/ˈhɪndrəns/',
@@ -6437,7 +6568,8 @@ export const initialState = {
     ],
   },
   rational: {
-    word: 'rational',
+    saved: false,
+word: 'rational',
     phonetics: [
       {
         text: '/ˈræʃ(ə)n(ə)l/',
@@ -6507,7 +6639,8 @@ export const initialState = {
     ],
   },
   hindsight: {
-    word: 'hindsight',
+    saved: false,
+word: 'hindsight',
     phonetics: [
       {
         text: '/ˈhaɪn(d)ˌsaɪt/',
@@ -6534,7 +6667,8 @@ export const initialState = {
     ],
   },
   vain: {
-    word: 'vain',
+    saved: false,
+word: 'vain',
     phonetics: [
       {
         text: '/veɪn/',
@@ -6598,7 +6732,8 @@ export const initialState = {
     ],
   },
   hone: {
-    word: 'hone',
+    saved: false,
+word: 'hone',
     phonetics: [
       {
         text: '/hoʊn/',
@@ -6666,7 +6801,8 @@ export const initialState = {
     ],
   },
   fallacy: {
-    word: 'fallacy',
+    saved: false,
+word: 'fallacy',
     phonetics: [
       {
         text: '/ˈfæləsi/',
@@ -6723,7 +6859,8 @@ export const initialState = {
     ],
   },
   emaciation: {
-    word: 'emaciation',
+    saved: false,
+word: 'emaciation',
     phonetics: [
       {
         text: '/əˌmeɪʃiˈeɪʃ(ə)n/',
@@ -6763,7 +6900,8 @@ export const initialState = {
     ],
   },
   wrath: {
-    word: 'wrath',
+    saved: false,
+word: 'wrath',
     phonetics: [
       {
         text: '/ræθ/',
@@ -6835,7 +6973,8 @@ export const initialState = {
     ],
   },
   brunt: {
-    word: 'brunt',
+    saved: false,
+word: 'brunt',
     phonetics: [
       {
         text: '/brənt/',
@@ -6875,7 +7014,8 @@ export const initialState = {
     ],
   },
   arduous: {
-    word: 'arduous',
+    saved: false,
+word: 'arduous',
     phonetics: [
       {
         text: '/ˈɑrdʒuəs/',
@@ -6925,7 +7065,8 @@ export const initialState = {
     ],
   },
   invigorating: {
-    word: 'invigorating',
+    saved: false,
+word: 'invigorating',
     phonetics: [
       {
         text: '/ɪnˈvɪɡəˌreɪdɪŋ/',
@@ -6958,7 +7099,8 @@ export const initialState = {
     ],
   },
   superstitious: {
-    word: 'superstitious',
+    saved: false,
+word: 'superstitious',
     phonetics: [
       {
         text: '/ˌsupərˈstɪʃəs/',
@@ -7000,7 +7142,8 @@ export const initialState = {
     ],
   },
   emphasize: {
-    word: 'emphasize',
+    saved: false,
+word: 'emphasize',
     phonetics: [
       {
         text: '/ˈɛmfəˌsaɪz/',
@@ -7047,7 +7190,8 @@ export const initialState = {
     ],
   },
   adulterer: {
-    word: 'adulterer',
+    saved: false,
+word: 'adulterer',
     phonetics: [
       {
         text: '/əˈdəltərər/',
@@ -7081,7 +7225,8 @@ export const initialState = {
     ],
   },
   adulation: {
-    word: 'adulation',
+    saved: false,
+word: 'adulation',
     phonetics: [
       {
         text: '/ˌædʒəˈleɪʃ(ə)n/',
@@ -7146,7 +7291,8 @@ export const initialState = {
     ],
   },
   agonizing: {
-    word: 'agonizing',
+    saved: false,
+word: 'agonizing',
     phonetics: [
       {
         text: '/ˈæɡəˌnaɪzɪŋ/',
@@ -7202,7 +7348,8 @@ export const initialState = {
     ],
   },
   accolade: {
-    word: 'accolade',
+    saved: false,
+word: 'accolade',
     phonetics: [
       {
         text: '/ˈækəˌleɪd/',
@@ -7244,7 +7391,8 @@ export const initialState = {
     ],
   },
   ornament: {
-    word: 'ornament',
+    saved: false,
+word: 'ornament',
     phonetics: [
       {
         text: '/ˈɔrnəmənt/',
@@ -7311,7 +7459,8 @@ export const initialState = {
     ],
   },
   raucous: {
-    word: 'raucous',
+    saved: false,
+word: 'raucous',
     phonetics: [
       {
         text: '/ˈrɔkəs/',
@@ -7360,7 +7509,8 @@ export const initialState = {
     ],
   },
   lethargic: {
-    word: 'lethargic',
+    saved: false,
+word: 'lethargic',
     phonetics: [
       {
         text: '/ləˈθɑrdʒɪk/',
@@ -7395,7 +7545,8 @@ export const initialState = {
     ],
   },
   vacuous: {
-    word: 'vacuous',
+    saved: false,
+word: 'vacuous',
     phonetics: [
       {
         text: '/ˈvækjuəs/',
@@ -7450,7 +7601,8 @@ export const initialState = {
     ],
   },
   espouse: {
-    word: 'espouse',
+    saved: false,
+word: 'espouse',
     phonetics: [
       {
         text: '/ɪˈspaʊz/',
@@ -7498,7 +7650,8 @@ export const initialState = {
     ],
   },
   clamour: {
-    word: 'clamour',
+    saved: false,
+word: 'clamour',
     phonetics: [
       {
         text: '/ˈklamə/',
@@ -7564,7 +7717,8 @@ export const initialState = {
     ],
   },
   abominable: {
-    word: 'abominable',
+    saved: false,
+word: 'abominable',
     phonetics: [
       {
         text: '/əˈbɑm(ə)nəb(ə)l/',
@@ -7610,7 +7764,8 @@ export const initialState = {
     ],
   },
   reconnaissance: {
-    word: 'reconnaissance',
+    saved: false,
+word: 'reconnaissance',
     phonetics: [
       {
         text: '/rəˈkɑnəsəns/',
@@ -7657,7 +7812,8 @@ export const initialState = {
     ],
   },
   stifling: {
-    word: 'stifling',
+    saved: false,
+word: 'stifling',
     phonetics: [
       {
         text: '/ˈstaɪf(ə)lɪŋ/',
@@ -7695,7 +7851,8 @@ export const initialState = {
     ],
   },
   bland: {
-    word: 'bland',
+    saved: false,
+word: 'bland',
     phonetics: [
       {
         text: '/blænd/',
@@ -7733,7 +7890,8 @@ export const initialState = {
     ],
   },
   proverbial: {
-    word: 'proverbial',
+    saved: false,
+word: 'proverbial',
     phonetics: [
       {
         text: '/prəˈvərbiəl/',
@@ -7767,7 +7925,8 @@ export const initialState = {
     ],
   },
   dignity: {
-    word: 'dignity',
+    saved: false,
+word: 'dignity',
     phonetics: [
       {
         text: '/ˈdɪɡnədi/',
@@ -7794,7 +7953,8 @@ export const initialState = {
     ],
   },
   exacerbate: {
-    word: 'exacerbate',
+    saved: false,
+word: 'exacerbate',
     phonetics: [
       {
         text: '/ɪɡˈzæsərˌbeɪt/',
@@ -7836,7 +7996,8 @@ export const initialState = {
     ],
   },
   inundation: {
-    word: 'inundation',
+    saved: false,
+word: 'inundation',
     phonetics: [
       {
         text: '/ˌɪnənˈdeɪʃ(ə)n/',
@@ -7867,7 +8028,8 @@ export const initialState = {
     ],
   },
   pervasiveness: {
-    word: 'pervasiveness',
+    saved: false,
+word: 'pervasiveness',
     phonetics: [
       {
         text: '/pərˈveɪsɪvnəs/',
@@ -7901,7 +8063,8 @@ export const initialState = {
     ],
   },
   humdrum: {
-    word: 'humdrum',
+    saved: false,
+word: 'humdrum',
     phonetics: [
       {
         text: '/ˈhəmˌdrəm/',
@@ -7993,7 +8156,8 @@ export const initialState = {
     ],
   },
   feat: {
-    word: 'feat',
+    saved: false,
+word: 'feat',
     phonetics: [
       {
         text: '/fit/',
@@ -8042,7 +8206,8 @@ export const initialState = {
     ],
   },
   tidal: {
-    word: 'tidal',
+    saved: false,
+word: 'tidal',
     phonetics: [
       {
         text: '/ˈtaɪdl/',
@@ -8075,7 +8240,8 @@ export const initialState = {
     ],
   },
   gawk: {
-    word: 'gawk',
+    saved: false,
+word: 'gawk',
     phonetics: [
       {
         text: '/ɡɔk/',
@@ -8119,7 +8285,8 @@ export const initialState = {
     ],
   },
   liberation: {
-    word: 'liberation',
+    saved: false,
+word: 'liberation',
     phonetics: [
       {
         text: '/ˌlɪbəˈreɪʃ(ə)n/',
@@ -8164,7 +8331,8 @@ export const initialState = {
     ],
   },
   amok: {
-    word: 'amok',
+    saved: false,
+word: 'amok',
     phonetics: [
       {
         text: '/əˈmək/',
@@ -8191,7 +8359,8 @@ export const initialState = {
     ],
   },
   infraction: {
-    word: 'infraction',
+    saved: false,
+word: 'infraction',
     phonetics: [
       {
         text: '/ɪnˈfrækʃ(ə)n/',
@@ -8226,7 +8395,8 @@ export const initialState = {
     ],
   },
   resilient: {
-    word: 'resilient',
+    saved: false,
+word: 'resilient',
     phonetics: [
       {
         text: '/rəˈzɪljənt/',
@@ -8277,7 +8447,8 @@ export const initialState = {
     ],
   },
   resilience: {
-    word: 'resilience',
+    saved: false,
+word: 'resilience',
     phonetics: [
       {
         text: '/rəˈzɪljəns/',
@@ -8332,7 +8503,8 @@ export const initialState = {
     ],
   },
   insurmountable: {
-    word: 'insurmountable',
+    saved: false,
+word: 'insurmountable',
     phonetics: [
       {
         text: '/ˌɪnsərˈmaʊn(t)əb(ə)l/',
@@ -8372,7 +8544,8 @@ export const initialState = {
     ],
   },
   inferior: {
-    word: 'inferior',
+    saved: false,
+word: 'inferior',
     phonetics: [
       {
         text: '/ˌɪnˈfɪriər/',
@@ -8456,7 +8629,8 @@ export const initialState = {
     ],
   },
   blatant: {
-    word: 'blatant',
+    saved: false,
+word: 'blatant',
     phonetics: [
       {
         text: '/ˈbleɪtnt/',
@@ -8497,7 +8671,8 @@ export const initialState = {
     ],
   },
   alienate: {
-    word: 'alienate',
+    saved: false,
+word: 'alienate',
     phonetics: [
       {
         text: '/ˈeɪljəˌneɪt/',
@@ -8554,7 +8729,8 @@ export const initialState = {
     ],
   },
   overindulgence: {
-    word: 'overindulgence',
+    saved: false,
+word: 'overindulgence',
     phonetics: [
       {
         text: '/ˌoʊvərənˈdəldʒəns/',
@@ -8615,7 +8791,8 @@ export const initialState = {
     ],
   },
   albeit: {
-    word: 'albeit',
+    saved: false,
+word: 'albeit',
     phonetics: [
       {
         text: '/ɔlˈbiɪt/',
@@ -8664,7 +8841,8 @@ export const initialState = {
     ],
   },
   suffocate: {
-    word: 'suffocate',
+    saved: false,
+word: 'suffocate',
     phonetics: [
       {
         text: '/ˈsəfəˌkeɪt/',
@@ -8692,7 +8870,8 @@ export const initialState = {
     ],
   },
   revolve: {
-    word: 'revolve',
+    saved: false,
+word: 'revolve',
     phonetics: [
       {
         text: '/rəˈvɑlv/',
@@ -8727,7 +8906,8 @@ export const initialState = {
     ],
   },
   unravel: {
-    word: 'unravel',
+    saved: false,
+word: 'unravel',
     phonetics: [
       {
         text: '/ˌənˈrævəl/',
@@ -8803,7 +8983,8 @@ export const initialState = {
     ],
   },
   clerical: {
-    word: 'clerical',
+    saved: false,
+word: 'clerical',
     phonetics: [
       {
         text: '/ˈklɛrək(ə)l/',
@@ -8854,7 +9035,8 @@ export const initialState = {
     ],
   },
   tantamount: {
-    word: 'tantamount',
+    saved: false,
+word: 'tantamount',
     phonetics: [
       {
         text: '/ˈtæn(t)əˌmaʊnt/',
@@ -8904,7 +9086,8 @@ export const initialState = {
     ],
   },
   resentment: {
-    word: 'resentment',
+    saved: false,
+word: 'resentment',
     phonetics: [
       {
         text: '/rəˈzɛntmənt/',
@@ -8955,7 +9138,8 @@ export const initialState = {
     ],
   },
   rebellious: {
-    word: 'rebellious',
+    saved: false,
+word: 'rebellious',
     phonetics: [
       {
         text: '/rəˈbɛljəs/',
@@ -9014,7 +9198,8 @@ export const initialState = {
     ],
   },
   pleading: {
-    word: 'pleading',
+    saved: false,
+word: 'pleading',
     phonetics: [
       {
         text: '/ˈplidɪŋ/',
@@ -9064,7 +9249,8 @@ export const initialState = {
     ],
   },
   tormentor: {
-    word: 'tormentor',
+    saved: false,
+word: 'tormentor',
     phonetics: [
       {
         text: '/tɔrˈmɛn(t)ər/',
@@ -9105,7 +9291,8 @@ export const initialState = {
     ],
   },
   claw: {
-    word: 'claw',
+    saved: false,
+word: 'claw',
     phonetics: [
       {
         text: '/klɔ/',
@@ -9162,7 +9349,8 @@ export const initialState = {
     ],
   },
   rummage: {
-    word: 'rummage',
+    saved: false,
+word: 'rummage',
     phonetics: [
       {
         text: '/ˈrəmɪdʒ/',
@@ -9225,7 +9413,8 @@ export const initialState = {
     ],
   },
   facade: {
-    word: 'facade',
+    saved: false,
+word: 'facade',
     phonetics: [
       {
         text: '/fəˈsɑd/',
@@ -9269,7 +9458,8 @@ export const initialState = {
     ],
   },
   impervious: {
-    word: 'impervious',
+    saved: false,
+word: 'impervious',
     phonetics: [
       {
         text: '/ɪmˈpərviəs/',
@@ -9318,7 +9508,8 @@ export const initialState = {
     ],
   },
   affirmation: {
-    word: 'affirmation',
+    saved: false,
+word: 'affirmation',
     phonetics: [
       {
         text: '/ˌæfərˈmeɪʃ(ə)n/',
@@ -9373,7 +9564,8 @@ export const initialState = {
     ],
   },
   'self-aggrandizing': {
-    word: 'self-aggrandizing',
+    saved: false,
+word: 'self-aggrandizing',
     phonetics: [
       {
         text: '/ˌsɛlfəˈɡrænˌdaɪzɪŋ/',
@@ -9404,7 +9596,8 @@ export const initialState = {
     ],
   },
   construe: {
-    word: 'construe',
+    saved: false,
+word: 'construe',
     phonetics: [
       {
         text: '/kənˈstru/',
@@ -9445,7 +9638,8 @@ export const initialState = {
     ],
   },
   contagious: {
-    word: 'contagious',
+    saved: false,
+word: 'contagious',
     phonetics: [
       {
         text: '/kənˈteɪdʒəs/',
@@ -9492,7 +9686,8 @@ export const initialState = {
     ],
   },
   alluring: {
-    word: 'alluring',
+    saved: false,
+word: 'alluring',
     phonetics: [
       {
         text: '/əˈlʊrɪŋ/',
@@ -9530,7 +9725,8 @@ export const initialState = {
     ],
   },
   exude: {
-    word: 'exude',
+    saved: false,
+word: 'exude',
     phonetics: [
       {
         text: '/ɪɡˈzud/',
@@ -9589,7 +9785,8 @@ export const initialState = {
     ],
   },
   entitled: {
-    word: 'entitled',
+    saved: false,
+word: 'entitled',
     phonetics: [
       {
         text: '/ɪnˈtaɪdld/',
@@ -9628,7 +9825,8 @@ export const initialState = {
     ],
   },
   fixate: {
-    word: 'fixate',
+    saved: false,
+word: 'fixate',
     phonetics: [
       {
         text: '/ˈfɪkˌseɪt/',
@@ -9666,7 +9864,8 @@ export const initialState = {
     ],
   },
   inane: {
-    word: 'inane',
+    saved: false,
+word: 'inane',
     phonetics: [
       {
         text: '/ɪˈneɪn/',
@@ -9727,7 +9926,8 @@ export const initialState = {
     ],
   },
   tangible: {
-    word: 'tangible',
+    saved: false,
+word: 'tangible',
     phonetics: [
       {
         text: '/ˈtændʒəb(ə)l/',
@@ -9783,7 +9983,8 @@ export const initialState = {
     ],
   },
   rage: {
-    word: 'rage',
+    saved: false,
+word: 'rage',
     phonetics: [
       {
         text: '/reɪdʒ/',
@@ -9875,7 +10076,8 @@ export const initialState = {
     ],
   },
   finagle: {
-    word: 'finagle',
+    saved: false,
+word: 'finagle',
     phonetics: [
       {
         text: '/fəˈneɪɡ(ə)l/',
@@ -9918,7 +10120,8 @@ export const initialState = {
     ],
   },
   mundane: {
-    word: 'mundane',
+    saved: false,
+word: 'mundane',
     phonetics: [
       {
         text: '/ˌmənˈdeɪn/',
@@ -10001,7 +10204,8 @@ export const initialState = {
     ],
   },
   bogus: {
-    word: 'bogus',
+    saved: false,
+word: 'bogus',
     phonetics: [
       {
         text: '/ˈboʊɡəs/',
@@ -10052,7 +10256,8 @@ export const initialState = {
     ],
   },
   virtue: {
-    word: 'virtue',
+    saved: false,
+word: 'virtue',
     phonetics: [
       {
         text: '/ˈvərtʃu/',
@@ -10118,7 +10323,8 @@ export const initialState = {
     ],
   },
   admonishment: {
-    word: 'admonishment',
+    saved: false,
+word: 'admonishment',
     phonetics: [
       {
         text: '/ədˈmɑnɪʃmənt/',
@@ -10159,7 +10365,8 @@ export const initialState = {
     ],
   },
   narrative: {
-    word: 'narrative',
+    saved: false,
+word: 'narrative',
     phonetics: [
       {
         text: '/ˈnɛrədɪv/',
@@ -10212,7 +10419,8 @@ export const initialState = {
     ],
   },
   summit: {
-    word: 'summit',
+    saved: false,
+word: 'summit',
     phonetics: [
       {
         text: '/ˈsəmət/',
@@ -10277,7 +10485,8 @@ export const initialState = {
     ],
   },
   fruition: {
-    word: 'fruition',
+    saved: false,
+word: 'fruition',
     phonetics: [
       {
         text: '/fruˈɪʃ(ə)n/',
@@ -10311,7 +10520,8 @@ export const initialState = {
     ],
   },
   adolescent: {
-    word: 'adolescent',
+    saved: false,
+word: 'adolescent',
     phonetics: [
       {
         text: '/ˌædəˈlɛs(ə)nt/',
@@ -10381,7 +10591,8 @@ export const initialState = {
     ],
   },
   sabotage: {
-    word: 'sabotage',
+    saved: false,
+word: 'sabotage',
     phonetics: [
       {
         text: '/ˈsæbəˌtɑʒ/',
@@ -10447,7 +10658,8 @@ export const initialState = {
     ],
   },
   salvation: {
-    word: 'salvation',
+    saved: false,
+word: 'salvation',
     phonetics: [
       {
         text: '/sælˈveɪʃ(ə)n/',
@@ -10498,7 +10710,8 @@ export const initialState = {
     ],
   },
   compulsive: {
-    word: 'compulsive',
+    saved: false,
+word: 'compulsive',
     phonetics: [
       {
         text: '/kəmˈpəlsɪv/',
@@ -10553,7 +10766,8 @@ export const initialState = {
     ],
   },
   arbitrary: {
-    word: 'arbitrary',
+    saved: false,
+word: 'arbitrary',
     phonetics: [
       {
         text: '/ˈɑrbəˌtrɛri/',
@@ -10600,7 +10814,8 @@ export const initialState = {
     ],
   },
   obnoxious: {
-    word: 'obnoxious',
+    saved: false,
+word: 'obnoxious',
     phonetics: [
       {
         text: '/əbˈnɑkʃəs/',
@@ -10670,7 +10885,8 @@ export const initialState = {
     ],
   },
   alleviate: {
-    word: 'alleviate',
+    saved: false,
+word: 'alleviate',
     phonetics: [
       {
         text: '/əˈliviˌeɪt/',
@@ -10733,7 +10949,8 @@ export const initialState = {
     ],
   },
   attain: {
-    word: 'attain',
+    saved: false,
+word: 'attain',
     phonetics: [
       {
         text: '/əˈteɪn/',
@@ -10792,7 +11009,8 @@ export const initialState = {
     ],
   },
   eerily: {
-    word: 'eerily',
+    saved: false,
+word: 'eerily',
     phonetics: [
       {
         text: '/ˈɪrɪli/',
@@ -10825,7 +11043,8 @@ export const initialState = {
     ],
   },
   despair: {
-    word: 'despair',
+    saved: false,
+word: 'despair',
     phonetics: [
       {
         text: '/dəˈspɛr/',
@@ -10890,7 +11109,8 @@ export const initialState = {
     ],
   },
   repression: {
-    word: 'repression',
+    saved: false,
+word: 'repression',
     phonetics: [
       {
         text: '/rəˈprɛʃ(ə)n/',
@@ -10933,7 +11153,8 @@ export const initialState = {
     ],
   },
   neuroticism: {
-    word: 'neuroticism',
+    saved: false,
+word: 'neuroticism',
     phonetics: [
       {
         text: '/n(j)ʊˈrɑdəˌsɪzəm/',
@@ -10956,7 +11177,8 @@ export const initialState = {
     ],
   },
   delude: {
-    word: 'delude',
+    saved: false,
+word: 'delude',
     phonetics: [
       {
         text: '/dəˈlud/',
@@ -11009,7 +11231,8 @@ export const initialState = {
     ],
   },
   condescending: {
-    word: 'condescending',
+    saved: false,
+word: 'condescending',
     phonetics: [
       {
         text: '/ˌkɑndəˈsɛndɪŋ/',
@@ -11057,7 +11280,8 @@ export const initialState = {
     ],
   },
   vogue: {
-    word: 'vogue',
+    saved: false,
+word: 'vogue',
     phonetics: [
       {
         text: '/voʊɡ/',
@@ -11118,7 +11342,8 @@ export const initialState = {
     ],
   },
   perpetually: {
-    word: 'perpetually',
+    saved: false,
+word: 'perpetually',
     phonetics: [
       {
         text: '/pərˈpɛtʃuəli/',
@@ -11152,7 +11377,8 @@ export const initialState = {
     ],
   },
   saunter: {
-    word: 'saunter',
+    saved: false,
+word: 'saunter',
     phonetics: [
       {
         text: '/ˈsɔn(t)ər/',
@@ -11213,7 +11439,8 @@ export const initialState = {
     ],
   },
   compassion: {
-    word: 'compassion',
+    saved: false,
+word: 'compassion',
     phonetics: [
       {
         text: '/kəmˈpæʃən/',
@@ -11273,7 +11500,8 @@ export const initialState = {
     ],
   },
   youth: {
-    word: 'youth',
+    saved: false,
+word: 'youth',
     phonetics: [
       {
         text: '/juθ/',
@@ -11335,7 +11563,8 @@ export const initialState = {
     ],
   },
   chafe: {
-    word: 'chafe',
+    saved: false,
+word: 'chafe',
     phonetics: [
       {
         text: '/tʃeɪf/',
@@ -11408,7 +11637,8 @@ export const initialState = {
     ],
   },
   weary: {
-    word: 'weary',
+    saved: false,
+word: 'weary',
     phonetics: [
       {
         text: '/ˈwɪri/',
@@ -11486,7 +11716,8 @@ export const initialState = {
     ],
   },
   macho: {
-    word: 'macho',
+    saved: false,
+word: 'macho',
     phonetics: [
       {
         text: '/ˈmɑtʃoʊ/',
@@ -11525,7 +11756,8 @@ export const initialState = {
     ],
   },
   matriarch: {
-    word: 'matriarch',
+    saved: false,
+word: 'matriarch',
     phonetics: [
       {
         text: '/ˈmeɪtriˌɑrk/',
@@ -11549,7 +11781,8 @@ export const initialState = {
     ],
   },
   archaic: {
-    word: 'archaic',
+    saved: false,
+word: 'archaic',
     phonetics: [
       {
         text: '/ɑrˈkeɪɪk/',
@@ -11593,7 +11826,8 @@ export const initialState = {
     ],
   },
   inkling: {
-    word: 'inkling',
+    saved: false,
+word: 'inkling',
     phonetics: [
       {
         text: '/ˈɪŋklɪŋ/',
@@ -11633,7 +11867,8 @@ export const initialState = {
     ],
   },
   fathom: {
-    word: 'fathom',
+    saved: false,
+word: 'fathom',
     phonetics: [
       {
         text: '/ˈfæðəm/',
@@ -11696,7 +11931,8 @@ export const initialState = {
     ],
   },
   offspring: {
-    word: 'offspring',
+    saved: false,
+word: 'offspring',
     phonetics: [
       {
         text: '/ˈɔfˌsprɪŋ/',
@@ -11735,7 +11971,8 @@ export const initialState = {
     ],
   },
   fertile: {
-    word: 'fertile',
+    saved: false,
+word: 'fertile',
     phonetics: [
       {
         text: '/ˈfərdl/',
@@ -11784,7 +12021,8 @@ export const initialState = {
     ],
   },
   trait: {
-    word: 'trait',
+    saved: false,
+word: 'trait',
     phonetics: [
       {
         text: '/treɪt/',
@@ -11845,7 +12083,8 @@ export const initialState = {
     ],
   },
   induce: {
-    word: 'induce',
+    saved: false,
+word: 'induce',
     phonetics: [
       {
         text: '/ɪnˈd(j)us/',
@@ -11948,7 +12187,8 @@ export const initialState = {
     ],
   },
   sterile: {
-    word: 'sterile',
+    saved: false,
+word: 'sterile',
     phonetics: [
       {
         text: '/ˈstɛrəl/',
@@ -11992,7 +12232,8 @@ export const initialState = {
     ],
   },
   genus: {
-    word: 'genus',
+    saved: false,
+word: 'genus',
     phonetics: [
       {
         text: '/ˈdʒinəs/',
@@ -12033,7 +12274,8 @@ export const initialState = {
     ],
   },
   patriarch: {
-    word: 'patriarch',
+    saved: false,
+word: 'patriarch',
     phonetics: [
       {
         text: '/ˈpeɪtriˌɑrk/',
@@ -12080,7 +12322,8 @@ export const initialState = {
     ],
   },
   lineage: {
-    word: 'lineage',
+    saved: false,
+word: 'lineage',
     phonetics: [
       {
         text: '/ˈlɪniɪdʒ/',
@@ -12113,7 +12356,8 @@ export const initialState = {
     ],
   },
   ferocious: {
-    word: 'ferocious',
+    saved: false,
+word: 'ferocious',
     phonetics: [
       {
         text: '/fəˈroʊʃəs/',
@@ -12148,7 +12392,8 @@ export const initialState = {
     ],
   },
   feline: {
-    word: 'feline',
+    saved: false,
+word: 'feline',
     phonetics: [
       {
         text: '/ˈfiˌlaɪn/',
@@ -12200,7 +12445,8 @@ export const initialState = {
     ],
   },
   banal: {
-    word: 'banal',
+    saved: false,
+word: 'banal',
     phonetics: [
       {
         text: '/bəˈnɑl/',
@@ -12273,7 +12519,8 @@ export const initialState = {
     ],
   },
   orphan: {
-    word: 'orphan',
+    saved: false,
+word: 'orphan',
     phonetics: [
       {
         text: '/ˈɔrfən/',
@@ -12320,7 +12567,8 @@ export const initialState = {
     ],
   },
   abundance: {
-    word: 'abundance',
+    saved: false,
+word: 'abundance',
     phonetics: [
       {
         text: '/əˈbəndəns/',
@@ -12375,7 +12623,8 @@ export const initialState = {
     ],
   },
   temperamental: {
-    word: 'temperamental',
+    saved: false,
+word: 'temperamental',
     phonetics: [
       {
         text: '/ˌtɛmp(ə)rəˈmɛn(t)l/',
@@ -12449,7 +12698,8 @@ export const initialState = {
     ],
   },
   myriad: {
-    word: 'myriad',
+    saved: false,
+word: 'myriad',
     phonetics: [
       {
         text: '/ˈmɪriəd/',
@@ -12537,7 +12787,8 @@ export const initialState = {
     ],
   },
   elaborate: {
-    word: 'elaborate',
+    saved: false,
+word: 'elaborate',
     phonetics: [
       {
         text: '/əˈlæb(ə)rət/',
@@ -12623,7 +12874,8 @@ export const initialState = {
     ],
   },
   intricate: {
-    word: 'intricate',
+    saved: false,
+word: 'intricate',
     phonetics: [
       {
         text: '/ˈɪntrəkət/',
@@ -12672,7 +12924,8 @@ export const initialState = {
     ],
   },
   salivate: {
-    word: 'salivate',
+    saved: false,
+word: 'salivate',
     phonetics: [
       {
         text: '/ˈsæləˌveɪt/',
@@ -12716,7 +12969,8 @@ export const initialState = {
     ],
   },
   phenomenon: {
-    word: 'phenomenon',
+    saved: false,
+word: 'phenomenon',
     phonetics: [
       {
         text: '/fəˈnɑməˌnɑn/',
@@ -12796,7 +13050,8 @@ export const initialState = {
     ],
   },
   cognitive: {
-    word: 'cognitive',
+    saved: false,
+word: 'cognitive',
     phonetics: [
       {
         text: '/ˈkɑɡnədɪv/',
@@ -12836,7 +13091,8 @@ export const initialState = {
     ],
   },
   fictive: {
-    word: 'fictive',
+    saved: false,
+word: 'fictive',
     phonetics: [
       {
         text: '/ˈfɪktɪv/',
@@ -12907,7 +13163,8 @@ export const initialState = {
     ],
   },
   megafauna: {
-    word: 'megafauna',
+    saved: false,
+word: 'megafauna',
     phonetics: [
       {
         text: '/ˈmɛɡəˌfɔnə/',
@@ -12932,7 +13189,8 @@ export const initialState = {
     ],
   },
   polytheistic: {
-    word: 'polytheistic',
+    saved: false,
+word: 'polytheistic',
     phonetics: [
       {
         text: '/ˌpɑliˌθiˈɪstɪk/',
@@ -12965,7 +13223,8 @@ export const initialState = {
     ],
   },
   coalesce: {
-    word: 'coalesce',
+    saved: false,
+word: 'coalesce',
     phonetics: [
       {
         text: '/ˌkoʊəˈlɛs/',
@@ -13024,7 +13283,8 @@ export const initialState = {
     ],
   },
   worship: {
-    word: 'worship',
+    saved: false,
+word: 'worship',
     phonetics: [
       {
         text: '/ˈwərʃəp/',
@@ -13102,7 +13362,8 @@ export const initialState = {
     ],
   },
   coinage: {
-    word: 'coinage',
+    saved: false,
+word: 'coinage',
     phonetics: [
       {
         text: '/ˈkɔɪnɪdʒ/',
@@ -13157,7 +13418,8 @@ export const initialState = {
     ],
   },
   transcend: {
-    word: 'transcend',
+    saved: false,
+word: 'transcend',
     phonetics: [
       {
         text: '/træn(t)ˈsɛnd/',
@@ -13197,7 +13459,8 @@ export const initialState = {
     ],
   },
   savour: {
-    word: 'savour',
+    saved: false,
+word: 'savour',
     phonetics: [
       {
         text: '/ˈseɪvə/',

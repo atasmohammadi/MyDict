@@ -30,7 +30,7 @@ const homeReducer = (state = initialState, action) =>
           delete draft.definitions[definitions.word];
         }
         draft.definitions = {
-          [definitions.word]: definitions,
+          [definitions.word]: {saved: false,...definitions},
           ...draft.definitions,
         };
         draft.success = true;
@@ -41,6 +41,13 @@ const homeReducer = (state = initialState, action) =>
         draft.error = action.payload;
         draft.success = false;
         draft.loading = false;
+        break;
+      case constants.TOGGLE_SAVED:
+        const currentDefinition = draft.definitions[action.payload.word];
+        draft.definitions[action.payload.word] = {
+          ...currentDefinition,
+          saved: !currentDefinition.saved
+        }
         break;
     }
   });

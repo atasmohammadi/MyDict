@@ -10,19 +10,23 @@ const selectHomeDomain = (state) => state.home || initialState;
 /**
  * Other specific selectors
  */
+const homeDomain = createSelector(selectHomeDomain, (subState) => subState);
 
-const makeSelectLoading = () =>
-  createSelector(selectHomeDomain, (subState) => subState.loading);
+const loading = createSelector(selectHomeDomain, (subState) => subState.loading);
 
-const makeSelectDefinitions = () =>
-  createSelector(selectHomeDomain, (subState) => subState.definitions);
+const definitions = createSelector(selectHomeDomain, (subState) => subState.definitions);
 
-const makeSelectError = () =>
-  createSelector(selectHomeDomain, (subState) => subState.error);
+const error = createSelector(selectHomeDomain, (subState) => subState.error);
 
-const makeSelectSuccess = () =>
-  createSelector(selectHomeDomain, (subState) => subState.success);
+const success = createSelector(selectHomeDomain, (subState) => subState.success);
 
+const definitionsArray = createSelector(selectHomeDomain, (subState) =>
+    Object.values(subState.definitions).filter(def => !def.saved),
+  );
+
+const savedDefinitionsArray = createSelector(selectHomeDomain, (subState) =>
+    Object.values(subState.definitions).filter(def => !!def.saved),
+  );
 /**
  * Default selector used by Home
  */
@@ -32,9 +36,11 @@ const makeSelectHome = () =>
 
 export default makeSelectHome;
 export {
-  selectHomeDomain,
-  makeSelectLoading,
-  makeSelectDefinitions,
-  makeSelectError,
-  makeSelectSuccess,
+  homeDomain,
+  loading,
+  error,
+  success,
+  definitions,
+  definitionsArray,
+  savedDefinitionsArray,
 };

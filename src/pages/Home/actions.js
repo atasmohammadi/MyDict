@@ -20,3 +20,8 @@ export const getDefinitionFailed = (error) => ({
   type: constants.GET_DEFINITION_FAILED,
   payload: error,
 });
+
+export const toggleSaved = (word) => ({
+  type: constants.TOGGLE_SAVED,
+  payload: {word},
+});

@@ -1,49 +1,30 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   StatusBar,
   SafeAreaView,
   FlatList,
   View,
   Text,
-  Keyboard,
 } from 'react-native';
-import {Input, Button} from 'react-native-elements';
-import RNPickerSelect from 'react-native-picker-select';
 import Icon from 'react-native-vector-icons/dist/MaterialCommunityIcons';
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import {compose} from 'redux';
-import {useInjectSaga} from '../../utils/injectSaga';
-import * as actions from './actions';
-import styles from './styles';
-import {languages, secondLanguages} from '../../constants';
+import * as actions from '../Home/actions';
+import styles from '../Home/styles';
+import {secondLanguages} from '../../constants';
 
-import * as selectors from './selectors';
-import saga from './saga';
+import * as selectors from '../Home/selectors';
 
-function Home(props) {
-  const {toggleSaved, getDefinition, definitionsArray, error} = props;
-
-  useInjectSaga({key: 'Home', saga});
-  const [searchQuery, setSearchQuery] = useState('');
-  const [language, setLanguage] = useState('en');
-  const [secondLanguage, setSecondLanguage] = useState('fa');
-
-  function search() {
-    if (!searchQuery) {
-      return;
-    }
-    Keyboard.dismiss();
-    getDefinition(searchQuery, language, secondLanguage);
-    setSearchQuery('');
-  }
+function Saved(props) {
+  const {toggleSaved, savedDefinitionsArray} = props;
 
   // Render list item ( word )
   function renderItem({item: {saved, word, phonetics, meanings, translation}}) {
     return (
       <View style={styles.item} key={word.toString()}>
-        {!saved && <Icon
-              name="star-outline"
+        {saved && <Icon
+              name="star"
               size={20}
               color="#d3d3d3"
               onPress={() => toggleSaved(word)}
@@ -129,83 +110,15 @@ function Home(props) {
     );
   }
 
-  function updateSearch(s = '') {
-    setSearchQuery(s)
-  }
-
-  function searchBar() {
-    return (
-      <>
-        <Input
-          value={searchQuery}
-          rightIcon={
-            <Icon
-              name="close"
-              size={20}
-              color="#d3d3d3"
-              onPress={updateSearch}
-            />
-          }
-          placeholder={`Enter word in ${languages[language]}`}
-          onChangeText={updateSearch}
-          inputStyle={styles.searchInput}
-        />
-        <View style={{display: 'flex', flexDirection: 'row', marginBottom: 5}}>
-          <View
-            style={{
-              flex: 1,
-              marginRight: 3,
-            }}>
-            <RNPickerSelect
-              onValueChange={setLanguage}
-              value={language}
-              items={Object.keys(languages).map((languageKey) => ({
-                value: languageKey,
-                label: languages[languageKey],
-              }))}
-              style={{
-                placeholder: styles.pickerPlaceholder,
-                inputIOS: styles.pickerInput,
-                inputAndroid: styles.pickerInput,
-              }}
-            />
-          </View>
-          <View
-            style={{
-              flex: 1,
-              marginLeft: 3,
-            }}>
-            <RNPickerSelect
-              onValueChange={setSecondLanguage}
-              value={secondLanguage}
-              items={Object.keys(secondLanguages).map((languageKey) => ({
-                value: languageKey,
-                label: secondLanguages[languageKey],
-              }))}
-              style={{
-                placeholder: styles.pickerPlaceholder,
-                inputIOS: styles.pickerInput,
-                inputAndroid: styles.pickerInput,
-              }}
-            />
-          </View>
-        </View>
-        <Button onPress={search} title="Search" type="outline" />
-      </>
-    );
-  }
-
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <StatusBar barStyle="light-content" backgroundColor="#222831" />
-        {searchBar()}
-        {error && <Text style={styles.error}>Error: {error}</Text>}
         <FlatList
-          data={definitionsArray}
+          data={savedDefinitionsArray}
           renderItem={renderItem}
           keyExtractor={(item) => String(item.word)}
-          extraData={definitionsArray}
+          extraData={savedDefinitionsArray}
         />
       </View>
     </SafeAreaView>
@@ -213,16 +126,11 @@ function Home(props) {
 }
 
 const mapStateToProps = createStructuredSelector({
-  definitionsArray: selectors.definitionsArray,
-  loading: selectors.loading,
-  error: selectors.error,
-  success: selectors.success,
+  savedDefinitionsArray: selectors.savedDefinitionsArray,
 });
 
 function mapDispatchToProps(dispatch) {
   return {
-    getDefinition: (word, language, secondLanguage) =>
-      dispatch(actions.getDefinition(word, language, secondLanguage)),
     toggleSaved: (word) =>
       dispatch(actions.toggleSaved(word)),
   };
@@ -230,4 +138,4 @@ function mapDispatchToProps(dispatch) {
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
 
-export default compose(withConnect, React.memo)(Home);
+export default compose(withConnect, React.memo)(Saved);
