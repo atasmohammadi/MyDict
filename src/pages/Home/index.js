@@ -25,7 +25,7 @@ function Home(props) {
   const {getDefinition, definitions, error} = props;
 
   useInjectSaga({key: 'Home', saga});
-  const [searchQuery, updateSearchQuery] = useState('Abundance');
+  const [searchQuery, setSearchQuery] = useState('');
   const [language, setLanguage] = useState('en');
   const [secondLanguage, setSecondLanguage] = useState('fa');
   const definitionsArray = Object.values(definitions);
@@ -36,7 +36,7 @@ function Home(props) {
     }
     Keyboard.dismiss();
     getDefinition(searchQuery, language, secondLanguage);
-    updateSearchQuery('');
+    setSearchQuery('');
   }
 
   // Render list item ( word )
@@ -124,7 +124,11 @@ function Home(props) {
     );
   }
 
-  function SearchBar() {
+  function updateSearch(s = '') {
+    setSearchQuery(s)
+  }
+
+  function searchBar() {
     return (
       <>
         <Input
@@ -134,11 +138,11 @@ function Home(props) {
               name="close"
               size={20}
               color="#fff"
-              onPress={() => updateSearchQuery('')}
+              onPress={updateSearch}
             />
           }
           placeholder={`Enter word in ${languages[language]}`}
-          onChangeText={updateSearchQuery}
+          onChangeText={updateSearch}
           inputStyle={styles.searchInput}
         />
         <View style={{display: 'flex', flexDirection: 'row', marginBottom: 5}}>
@@ -190,7 +194,7 @@ function Home(props) {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <StatusBar barStyle="light-content" backgroundColor="#222831" />
-        <SearchBar />
+        {searchBar()}
         {error && <Text style={styles.error}>Error: {error}</Text>}
         <FlatList
           data={definitionsArray}

@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
     marginTop: StatusBar.currentHeight || 0,
-    backgroundColor: '#222831',
+    backgroundColor: 'rgba(0,0,0,1)',
   },
   container: {
     marginHorizontal: 10,
@@ -30,16 +30,8 @@ const styles = StyleSheet.create({
   item: {
     flex: 1,
     padding: 10,
-    backgroundColor: '#393e46',
+    backgroundColor: 'rgba(255,255,255,0.05)',
     marginVertical: 8,
-    shadowColor: '#eeeeee',
-    shadowOffset: {
-      width: 0,
-      height: 1,
-    },
-    shadowOpacity: 0.22,
-    shadowRadius: 2.22,
-    elevation: 3,
     borderRadius: 5,
   },
   row: {
