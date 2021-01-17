@@ -137,7 +137,7 @@ function Home(props) {
             <Icon
               name="close"
               size={20}
-              color="#fff"
+              color="#d3d3d3"
               onPress={updateSearch}
             />
           }
@@ -185,7 +185,7 @@ function Home(props) {
             />
           </View>
         </View>
-        <Button onPress={search} title="Search" />
+        <Button onPress={search} title="Search" type="outline" />
       </>
     );
   }

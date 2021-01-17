@@ -22,17 +22,17 @@ export const definitionEndpointHeaders = {
 
 export const languages = {
   en: 'English',
-  hi: 'Hindi',
-  es: 'Spanish',
-  fr: 'French',
-  ja: 'Japanese',
-  ru: 'Russian',
-  de: 'German',
-  it: 'Italian',
-  ko: 'Korean',
-  'pt-BR': 'Brazilian Portuguese',
-  ar: 'Arabic',
-  tr: 'Turkish',
+  // hi: 'Hindi',
+  // es: 'Spanish',
+  // fr: 'French',
+  // ja: 'Japanese',
+  // ru: 'Russian',
+  // de: 'German',
+  // it: 'Italian',
+  // ko: 'Korean',
+  // 'pt-BR': 'Brazilian Portuguese',
+  // ar: 'Arabic',
+  // tr: 'Turkish',
 };
 
 export const secondLanguages = {

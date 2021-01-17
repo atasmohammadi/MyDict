@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   searchInput: {
-    color: 'white',
+    color: 'grey',
   },
   pickerInput: {
     fontSize: 16,
@@ -19,11 +19,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'gray',
     borderRadius: 4,
-    color: 'white',
+    color: 'grey',
     paddingRight: 30,
   },
   pickerPlaceholder: {
-    color: 'white',
+    color: 'grey',
     fontSize: 12,
     fontWeight: 'bold',
   },
@@ -39,17 +39,17 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   title: {
-    color: 'white',
+    color: 'grey',
     fontSize: 14,
     fontWeight: 'bold',
   },
   h1: {
-    color: 'white',
+    color: 'grey',
     fontSize: 28,
     fontWeight: 'bold',
   },
   desc: {
-    color: 'white',
+    color: 'grey',
     fontSize: 14,
   },
   definitionItem: {
@@ -58,12 +58,12 @@ const styles = StyleSheet.create({
   line: {
     width: '100%',
     height: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'grey',
     paddingHorizontal: 5,
     marginVertical: 5,
   },
   greyBg: {
-    backgroundColor: 'grey',
+    backgroundColor: '#d3d3d3',
   },
 });
 
