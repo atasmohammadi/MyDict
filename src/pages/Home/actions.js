@@ -6,9 +6,9 @@
 
 import * as constants from './constants';
 
-export const getDefinition = (word, language) => ({
+export const getDefinition = (word, language, secondLanguage) => ({
   type: constants.GET_DEFINITION,
-  payload: {word, language},
+  payload: {word, language, secondLanguage},
 });
 
 export const getDefinitionSuccess = (definitions) => ({
